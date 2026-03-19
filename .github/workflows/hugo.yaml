@@ -91,6 +91,9 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
+      - name: Debug public
+        run: |
+          ls -R public
   deploy:
     environment:
       name: github-pages
